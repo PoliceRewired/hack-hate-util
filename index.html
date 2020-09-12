@@ -3,23 +3,52 @@
         <title>Hack Hate 2020 - redirection</title>
         <style>
             body {
-                background-color: black;
+                background-color: lightgray;
                 color: white;
                 font-family: Arial, Helvetica, sans-serif;
             }
             a {
                 text-decoration: none;
-                color: yellow;
+                color: navy;
             }
+            .resize_fit_center {
+                max-width: 80%;
+                max-height: 80%;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform-origin: center center;
+                transform: translate(-50%, -50%) rotate(-2deg);            
+            }
+            .with_shadow {
+                -webkit-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
+                -moz-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
+                box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
+            }
+            .rocking {
+                animation: rocking 2s infinite ease-in-out;
+            }
+
+        @keyframes rocking {
+            0% {
+                transform: translate(-50%, -50%) rotate(-2deg);
+            }
+            50% {
+                transform: translate(-50%, -50%) rotate(2deg);
+            }
+            100% {
+                transform: translate(-50%, -50%) rotate(-2deg);
+            }
+        }
         </style>
     </head>
     <body>
-        <div style="text-align: center;">
-            <a href="https://policerewired.org/home/hack-hate-2020" target="_top">
-                <p>If you are not redirected in 5 seconds, please click to continue...</p>
-                <img src="HackHate-poster.jpg" style="width: 100%;" />
-            </a>
-        </div>
+        <p style="text-align: center; font-weight: bold;">
+            <a href="https://policerewired.org/home/hack-hate-2020" target="_top">If you are not redirected in 5 seconds, please click to continue...</a>
+        </p>
+        <a href="https://policerewired.org/home/hack-hate-2020" target="_top">
+            <img src="HackHate-poster.jpg" class="resize_fit_center with_shadow rocking" />
+        </a>
         <script>
             setTimeout(function () {
                 top.location = 'https://policerewired.org/home/hack-hate-2020';
