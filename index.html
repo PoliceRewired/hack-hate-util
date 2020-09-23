@@ -7,7 +7,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- redirection -->
-        <meta http-equiv="refresh" content="4;URL='https://policerewired.org/home/hack-hate-2020'" /> 
+        <meta http-equiv="refresh" content="0;URL='https://policerewired.org/home/hack-hate-2020'" /> 
 
 		<!-- Primary Meta Tags -->
         <title>Hack Hate 2020</title>
@@ -43,13 +43,20 @@
                 color: navy;
             }
             .resize_fit_center {
-                max-width: 80%;
+                max-width: 50%;
                 max-height: 80%;
                 position: absolute;
                 top: 50%;
                 left: 50%;
                 transform-origin: center center;
-                transform: translate(-50%, -50%) rotate(-1deg);            
+                transform: translate(-50%, -50%);
+            }
+            .just_center {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform-origin: center center;
+                transform: translate(-50%, -50%);
             }
             .with_shadow {
                 -webkit-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
@@ -62,23 +69,25 @@
 
         @keyframes rocking {
             0% {
-                transform: translate(-50%, -50%) rotate(-1deg);
+                transform: rotate(-1deg);
             }
             50% {
-                transform: translate(-50%, -50%) rotate(1deg);
+                transform: rotate(1deg);
             }
             100% {
-                transform: translate(-50%, -50%) rotate(-1deg);
+                transform: rotate(-1deg);
             }
         }
         </style>
     </head>
     <body>
-        <p style="text-align: center; font-weight: bold;">
-            <a href="https://policerewired.org/home/hack-hate-2020" target="_top">If you are not redirected to the Hack Hate site, click to continue...</a>
-        </p>
-        <a href="https://policerewired.org/home/hack-hate-2020" target="_top">
-            <img src="HackHate-poster.jpg" class="resize_fit_center with_shadow rocking" />
-        </a>
+        <div class="resize_fit_center" style="text-align: center;">
+            <a href="https://policerewired.org/home/hack-hate-2020" target="_top">
+                <img src="HackHateTitle.png" class="rocking" style="max-width: 100%; max-height: 80%;" />
+            </a>
+            <br/>
+                <b><a href="https://policerewired.org/home/hack-hate-2020" target="_top">If you are not redirected to the Hack Hate site, click to continue...</a></b>
+            </p>
+        </div>
     </body>
 </html>
