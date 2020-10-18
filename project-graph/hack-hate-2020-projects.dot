@@ -15,16 +15,25 @@ digraph "Hack Hate 2020" {
 
     p11 -> p5;
     p10 -> p5;
-    p11 -> p4 [style=dashed, dir=none];
+    p11 -> p3;
     p2 -> p3;
+    p7 -> p3;
+    p12 -> p3;
     p2 -> p14 [dir=none, style=dashed];
     p2 -> p12;
     p11 -> p12 [style=dashed];
     p5 -> p12 [style=dashed];
-    p12 -> p1 [style=dashed];
+    p2 -> p7 [style=dashed];
+    p11 -> p7 [style=dashed];
+    p7 -> p1;
+    p11 -> p1;
+    p12 -> p1;
+    p2 -> p1;
     p4 -> p5;
     p9 -> p6;
     p11 -> p6;
     p2 -> p6;
-
+    p2 -> p5;
+    p7 -> p12 [dir=none, style=dashed];
+    p8 -> p4 [dir=none, style=dashed];
 }
