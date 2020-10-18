@@ -8,6 +8,12 @@ _Using graphviz/dot notation to represent Hack Hate 2020 projects, teams, and th
 
 * graphviz
 
+On OS X, install with:
+
+```bash
+brew install graphviz
+```
+
 ## Editing
 
 * Use `test.sh` to build and view (relies on `dot` and OS X command `open` to show `test.png`)
