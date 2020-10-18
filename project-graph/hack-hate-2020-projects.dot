@@ -11,7 +11,7 @@ digraph "Hack Hate 2020" {
     p10 [label="{<f0> Allies Against Hate (10)    |<f1> Forming a network of organisations and individuals,\land connecting allies, to improve the support \lnetwork for victims of hate crime.\l|<f2> @danitza_pizza\let al.\l}" shape=Mrecord];
     p11 [label="{<f0> Hate scavenger bot (11)     |<f1> A simple bot that people can @ to capture and store\lhateful posts on social media. Can then \lprovide data for other projects.\l|<f2> @instantiator_again\l@smash_the_hampster\l@James B\l}" shape=Mrecord];
     p12 [label="{<f0> Hate Speech Identifier (12) |<f1> A tool to scrape Twitter for hate speech, \lclassifying whether it is hate speech, and \lfurther categorising it into a number of \ldifferent strands. This will help to understand \lpatterns and trends of hate speech.\l|<f2> Team UCL\l(Discord handles TBC)\l}" shape=Mrecord];
-    p14 [label="{<f0> Be Nice (13)                |<f1> A browser extension to warn users of potentially \lhateful content before they post.\l|<f2> @MrSmooth\l@dutters\l@happyhoneybadger\l}" shape=Mrecord];
+    p13 [label="{<f0> Be Nice (13)                |<f1> A browser extension to warn users of potentially \lhateful content before they post.\l|<f2> @MrSmooth\l@dutters\l@happyhoneybadger\l}" shape=Mrecord];
 
     p11 -> p5;
     p10 -> p5;
@@ -19,7 +19,7 @@ digraph "Hack Hate 2020" {
     p2 -> p3;
     p7 -> p3;
     p12 -> p3;
-    p2 -> p14 [dir=none, style=dashed];
+    p2 -> p13 [dir=both, style=dashed];
     p2 -> p12;
     p11 -> p12 [style=dashed];
     p5 -> p12 [style=dashed];
@@ -28,12 +28,13 @@ digraph "Hack Hate 2020" {
     p7 -> p1;
     p11 -> p1;
     p12 -> p1;
+    p12 -> p13 [style=dashed];
     p2 -> p1;
     p4 -> p5;
     p9 -> p6;
     p11 -> p6;
     p2 -> p6;
     p2 -> p5;
-    p7 -> p12 [dir=none, style=dashed];
-    p8 -> p4 [dir=none, style=dashed];
+    p7 -> p12 [dir=both, style=dashed];
+    p8 -> p4 [dir=both, style=dashed];
 }
