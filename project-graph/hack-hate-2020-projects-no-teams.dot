@@ -1,0 +1,40 @@
+digraph "Hack Hate 2020" {
+    p1 [label="{<f0> Hate Detector (01)           |<f1> Visualising propagation of hate speech online, \lin relation to real world events.\l}" shape=Mrecord];
+    p2 [label="{<f0> Sweep Hate (02)              |<f1> A browser extension to help reduce hate that \lyou see, to report it, and to seek help.\l}" shape=Mrecord];
+    p3 [label="{<f0> POLAR (03)                   |<f1> A visualisation platform for hate crime and \lincidents, with analytical capability.\l}" shape=Mrecord];
+    p4 [label="{<f0> Hate crime reporting app (04)|<f1> A tool to self-report hate crime online or where \lit happens (including backend and dashboard).\l}" shape=Mrecord];
+    p5 [label="{<f0> Rate the Hate (05)           |<f1> A web app for users to categorise hate speech.\l}" shape=Mrecord];
+    p6 [label="{<f0> HateX (06)                   |<f1> A tool to ingest unstructured hate crime \lreports, to enrich and derive insights from them.\l}" shape=Mrecord];
+    p7 [label="{<f0> Hate Networks (07)           |<f1> Monitor and track accounts that post or retweet \lhate speech, and develop network insights as \lhate content spreads.\l}" shape=Mrecord];
+    p8 [label="{<f0> Victim report & support (08) |<f1> A tool to streamine and improve the user \lexperience reporting hate crime, and to improve \lvictim support after reporting.\l}" shape=Mrecord];
+    p9 [label="{<f0> Data collection app (09)     |<f1> A data collection app to support Inclusion London - \lhelping to collate information from \lmultiple DDPOs, and a dashboard to visualise \lthe collected reports.\l}" shape=Mrecord];
+    p10 [label="{<f0> Allies Against Hate (10)    |<f1> Forming a network of organisations and individuals,\land connecting allies, to improve the support \lnetwork for victims of hate crime.\l}" shape=Mrecord];
+    p11 [label="{<f0> Hate scavenger bot (11)     |<f1> A simple bot that people can @ to capture and store\lhateful posts on social media. Can then \lprovide data for other projects.\l}" shape=Mrecord];
+    p12 [label="{<f0> Hate Speech Identifier (12) |<f1> A tool to scrape Twitter for hate speech, \lclassifying whether it is hate speech, and \lfurther categorising it into a number of \ldifferent strands. This will help to understand \lpatterns and trends of hate speech.\l}" shape=Mrecord];
+    p13 [label="{<f0> Be Nice (13)                |<f1> A browser extension to warn users of potentially \lhateful content before they post.\l}" shape=Mrecord];
+
+    p11 -> p5;
+    p10 -> p5;
+    p11 -> p3;
+    p2 -> p3;
+    p7 -> p3;
+    p12 -> p3;
+    p2 -> p13 [dir=both, style=dashed];
+    p2 -> p12;
+    p11 -> p12 [style=dashed];
+    p5 -> p12 [style=dashed];
+    p2 -> p7 [style=dashed];
+    p11 -> p7 [style=dashed];
+    p7 -> p1;
+    p11 -> p1;
+    p12 -> p1;
+    p12 -> p13 [style=dashed];
+    p2 -> p1;
+    p4 -> p5;
+    p9 -> p6;
+    p11 -> p6;
+    p2 -> p6;
+    p2 -> p5;
+    p7 -> p12 [dir=both, style=dashed];
+    p8 -> p4 [dir=both, style=dashed];
+}
